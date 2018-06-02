@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar style="font-family: 'Cuprum', sans-serif; color: black" color="lindas">
+    <ion-title>
+      Cosas Lindas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+
+    <!-- <table class="table table-condensed">
+        <thead>
+          <tr>
+            <th>Usuario</th>
+            <th>Foto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dato of arrayCosasLindas">
+            <td>{{dato.usuario}} </td>
+            <td><img src='{{dato.foto}}'/> </td>
+            <img [src]="image" *ngIf="image" />
+          </tr>
+        </tbody>
+      </table> -->
+
+      <!-- <ion-list>
+          <tr *ngFor="let dato of arrayCosasLindas">
+          <ion-item >
+              <td><img item-start  src='{{dato.foto}}'/> </td>
+              <td ><h2 item-end><b>{{dato.usuario}}</b></h2> </td>
+          </ion-item>
+        </tr>
+        </ion-list> -->
+
+        <div *ngFor="let dato of arrayCosasLindas" class="miDiv">
+            <p class="pLindas" *ngIf="dato.usuario != $0" >{{dato.usuario}}
+            </p>
+            <img class="imgLindasFeas" *ngIf="dato.foto != $0" src='{{dato.foto}}'/> 
+              
+          </div>
+</ion-content>

@@ -1,0 +1,150 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+*{
+    font-family: 'Cuprum', sans-serif;
+}
+
+.alert-md [aria-checked=true] .alert-radio-label {
+    color: whitesmoke;;
+}
+.alert-md .alert-radio-inner {
+    background-color: whitesmoke;
+}
+.alert-md [aria-checked=true] .alert-radio-icon {
+    border-color: whitesmoke;
+}
+//Titulo
+.alert-md .alert-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: dimgrey;
+}
+//subtitulo
+.alert-md .alert-message {
+    font-family: 'Open Sans', sans-serif;
+    max-height: 240px;
+    font-size: 15px;
+    color: dimgrey;
+}
+//boton
+.alert-md .alert-button-group {
+    justify-content: center;
+    color: dimgrey;
+    padding: 8px 8px 8px 24px;
+}
+//boton
+.alert-md .alert-button {
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    background-color: dimgrey;
+    padding: 20px;
+}
+.alert-md .alert-button:disabled {
+    color: whitesmoke;
+    background-color: rgb(68, 68, 68);
+}
+.alert-md .alert-button:active {
+    color: whitesmoke;
+    background-color: rgb(68, 68, 68);
+}
+.alert-md .alert-button:hover {
+    color: whitesmoke;
+    background-color: rgb(68, 68, 68);
+}
+.errorAlert{
+    > div{
+        font-family: 'Open Sans', sans-serif;
+      background-color:#CC0000!important;
+      color: dimgrey;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+.warningAlert{
+    > div{
+        font-family: 'Open Sans', sans-serif;
+      background-color:#FF8800!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+.infoAlert{
+    > div{
+        font-family: 'Open Sans', sans-serif;
+      background-color:#8a96d8!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+.succesAlert{
+    > div{
+        font-family: 'Open Sans', sans-serif;
+      background-color:#007E33!important;
+      text-align: center;
+      font-weight: bold;
+      border-style: solid;
+      border-color: whitesmoke;
+    }
+  }
+
+  .toolbar-md-feas .bar-button-clear-md, .toolbar-md-feas .bar-button-default-md, .toolbar-md-feas .bar-button-outline-md, .toolbar-md-feas .toolbar-title-md {
+    color: black;
+}
+.toolbar-md-lindas .bar-button-clear-md, .toolbar-md-lindas .bar-button-default-md, .toolbar-md-lindas .bar-button-outline-md, .toolbar-md-lindas .toolbar-title-md {
+    color: black;
+}
+.pLindas{
+    background-color: rgba(5, 113, 163, 0.7);
+    font-family: 'Cuprum', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: -17px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+}
+.pFeas{
+    font-family: 'Cuprum', sans-serif;
+    background-color: rgba(140, 153, 24, 0.7);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* font-family: unset; */
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: -17px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+}
+.imgLindasFeas{
+        /* max-width: 100%; */
+    /* border: 0; */
+    width: 100%;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+}

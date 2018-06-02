@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar style="font-family: 'Cuprum', sans-serif; color: black" color="feas">
+    <ion-title style="color: black">
+      Cosas Feas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content text-center>
+  <!-- <ion-list>
+    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @santiago_lopez
+    </ion-item>
+  </ion-list> -->
+
+  <!-- <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Usuario</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dato of arrayCosasFeas">
+        <td>{{dato.usuario}} </td>
+        <td><img src='{{dato.foto}}'/> </td>
+      </tr>
+    </tbody>
+  </table> -->
+  <!-- <ion-list>
+      <tr *ngFor="let dato of arrayCosasFeas ">
+      <ion-item >
+          <td><img item-start  src='{{dato.foto}}'/> </td>
+          <td ><h2 item-end><b>{{dato.usuario}}</b></h2> </td>
+      </ion-item>
+    </tr>
+    </ion-list> -->
+    <div *ngFor="let dato of arrayCosasFeas" class="miDiv">
+      <p class="pFeas" *ngIf="dato.usuario != $0" >{{dato.usuario}}
+          
+      </p>
+      <img class="imgLindasFeas" *ngIf="dato.foto != $0" src='{{dato.foto}}'/> 
+        
+    </div>
+</ion-content>
